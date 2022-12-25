@@ -1,0 +1,14 @@
+*{
+    margin: 0;
+}
+
+body{
+    background: #141414;
+    color: #fff;
+}
+
+.row-container{
+    margin-top: -14.5rem;
+    position: relative;
+    z-index: 1;
+}
