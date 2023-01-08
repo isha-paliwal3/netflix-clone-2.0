@@ -9,8 +9,6 @@ const base_url = "https://image.tmdb.org/t/p/original/";
 
 function Row({ title, fetchUrl }) {
   const [movies, setMovies] = useState([]);
-  // const [mName, setName] = useState([]);
-  // const [Desc, setDesc] = useState([]);
 
   useEffect(() => {
     async function fetchData() {
@@ -33,8 +31,6 @@ function Row({ title, fetchUrl }) {
           setTrailerUrl(urlParams.get('v'));
         })
         .catch((error) => console.log(error));
-        setName(movie.name);
-        setDesc(movie.overview);
     }
   }
 
